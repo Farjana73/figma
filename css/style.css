@@ -1,0 +1,398 @@
+
+/* all variable start */
+:root{
+    --heading_clr:#555555;
+    --para_clr:#8c8c8c;
+    --theme_clr:#c7b299;
+    --railway:'Raleway', sans-serif;
+    --montserrat: 'Montserrat', sans-serif;
+}
+/* all variable end */
+/* all common css start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+    /* background-color: #bfab94; */
+}
+ul, li, ol{
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+img{
+    vertical-align: middle;
+}
+
+/* all common css end */
+
+/* all font start */
+/* font-family: 'Montserrat', sans-serif;
+   font-family: 'Raleway', sans-serif;
+ */
+
+/* all font end */
+
+/* =============================  
+    nav part start
+================================ */
+nav{
+    padding: 35px 0 35px 0;
+    position: absolute;
+    width: 100%;
+}
+nav .main_menu{
+  display: flex;
+  align-items: center;
+}
+
+
+nav .logo{
+    width: 185px;
+}
+nav .menu{
+    width: 985px;
+    text-align: right;
+    
+}
+nav .menu ul li{
+   display: inline-block;
+   margin-left: 30px;
+
+ 
+}
+nav .menu ul li a{
+   color: #fff;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 14px;
+   font-weight: 300;
+   transition: all linear .3s;
+ 
+}
+nav .menu ul li:hover a{
+   color: #bfab94;
+   
+ 
+}
+
+/* ====================
+     nav part end
+======================= */
+
+
+/* =============================  
+    Banner part start
+================================ */
+#banner{
+    background: url(../images/background-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#banner .overlay{
+    padding: 370px 0 380px 0;
+    background: rgba(17, 17, 17, 0.7);
+}
+.banner_info{
+    width: 615px;
+    margin: 0 auto;
+    text-align: center;
+}
+.banner_info h2{
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+   
+}
+.banner_info h1{
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 52px;
+    font-weight: 800;
+    padding-top: 15px;
+}
+.banner_info p{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 25px 10px 50px 10px;
+}
+.banner_info button{
+    color: #fff;
+    padding: 18px 38px;
+    background-color: #998675;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-bottom: 3px solid #736357;
+}
+
+/* ====================
+     Banner part end
+======================= */
+
+
+/* =============================  
+    Service part start
+================================ */
+
+#service{
+    padding: 50px 0 80px;
+    background-color: #ffff;
+}
+.Service_container{
+    display: flex; 
+    justify-content: space-between;
+}
+
+.Service_container .service_item{
+    width: 280px;
+    text-align: center;
+    padding: 30px 10px 0;
+  
+    
+}
+.Service_container .service_item .img{
+    width: 46px;
+    height: 46px;
+    margin: 0 auto;
+    transition: all linear .5s;
+}
+.Service_container .service_item .img img{
+   max-width: 100%;
+   height: 100%;
+   object-fit: cover;
+   transition: all linear .5s;
+}
+
+.Service_container .service_item .img img:nth-child(2){
+   display: none;
+   
+}
+
+.Service_container .service_item .text h2{
+    color: #555555;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    padding: 14px 0 19px;
+    transition: all linear .5s;
+
+}
+.Service_container .service_item .text p{
+    color: #8c8c8c;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 21px;
+    font-size: 14px;
+    font-weight: 300;
+    padding-bottom: 25px;
+    position: relative;
+
+}
+.Service_container .service_item p::after{
+    content: "";
+    height: 3px;
+    width: 70px;
+    background-color: #f1eee9;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: all linear .5s;
+   
+}
+
+.Service_container .service_item:hover .text h2{
+    
+    color: #c7b299;
+
+}
+
+
+.Service_container .service_item:hover .img img:nth-child(1){
+    display: none;
+
+}
+.Service_container .service_item:hover .img img:nth-child(2){
+    display: block;
+
+}
+.Service_container .service_item:hover p::after{
+    background: #c7b299;
+
+}
+
+/* ====================
+     Service part end
+======================= */
+
+
+/* =============================  
+    idea part start
+================================ */
+#idea{
+    
+    background-color: #fbfaf8;
+    padding: 80px 0 0;
+}
+
+#idea .section_heading{
+    width: 770px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#idea .section_heading h2{
+    color: #555555;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+}
+#idea .section_heading p{
+    padding: 30px 0;
+    color: #8c8c8c;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 21px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.Idea_image img{
+    max-width: 100% ;
+    height: auto;
+    transform: scaleX(1.05);
+}
+
+/* ====================
+     idea part end
+======================= */
+
+/* =============================  
+    purchase part start
+================================ */
+#purchase{
+    background: linear-gradient( to right, #211b19, #4d3327);
+    padding: 40px 0;
+}
+
+.purchase_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.purchase_container .text_info h2{
+    color: #ffff;
+    font-size: 28px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+}
+.purchase_container .text_info h2 span{
+    color: #b29f88;
+  
+}
+.purchase_container .text_info p{
+    color: #615855;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px;
+
+}
+.purchase_container .btn a{
+   padding: 18px 25px;
+   background-color: #998675;
+   border: none;
+   border-radius: 3px;
+   color: #ffff;
+   font-size: 14px;
+   font-weight: 800;
+   font-family: 'Raleway', sans-serif;
+   border-bottom: 3px solid #736357;
+}
+
+/* ====================
+     purchase part end
+======================= */
+
+/* =============================  
+    project part start
+================================ */
+#project{
+    padding: 80px 0;
+}
+.project_container .section_heading{
+    width: 770px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.project_container .section_heading h2{
+    color: #555555;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+}
+.project_container .section_heading p{
+    padding: 30px 0;
+    color: #8c8c8c;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 21px;
+    font-size: 16px;
+    font-weight: 300;
+}
+.project_container .project_btn{
+   text-align: center;
+}
+.project_container .project_btn button{
+   padding: 9px 20px;
+   border: 1px solid #ebebeb;
+   border-radius: 5px;
+   color: var(--para_clr);
+   font-family: var(--montserrat);
+   font-size: 14px;
+   font-weight: 300;
+   background-color: transparent;
+   transition: all linear .3s;
+   margin-left: 10px;
+
+}
+.project_container .project_btn button:hover {
+  background-color: #998675;
+  color: #ffff;
+}
+
+/* ====================
+     project part end
+======================= */
+
+
+
+
+
+
+
+/* =============================  
+    Banner part start
+================================ */
+
+
+/* ====================
+     Banner part end
+======================= */
+
+
